@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95607d3679.js" crossorigin="anonymous"></script>
     <title>Meenu Mohan Portfolio</title>
     <style>
-        body {
+     body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -28,9 +30,9 @@
        nav {
             display: flex;
             justify-content: space-between;
-            background-color: #444;
+            background-color: #00008B;
             padding: 20px;
-            height: 30px;
+            height: 25px;
         }
 
         nav a {
@@ -49,30 +51,55 @@
             text-align: center;
         }
 
-        .about-container {
+        .home-container {
             display: flex;
             justify-content: space-between;
-            margin: 20px;
+            margin: 0;
+            background-color:#ADD8E6;
+            height:550px;
         }
+
+
+    .social a {
+    font-size: 24px;
+    display: inline-block;
+    color: #00008B;
+    line-height: 1;
+    margin-right: 20px;
+    transition: 0.3s;
+    }
 
          .profile-image{
             flex: 1;
             max-width: 40%;
             margin-right: 20px;
+            margin-top: 40px;
+
         }
 
        .profile-image img {
             width: 100%;
             height: auto;
+            margin-top:60px;
+            margin-left:50px;
             border-radius: 50%; /* Make it a circle */
-            max-width: 200px; /* Adjust the max-width as needed */
+            max-width: 250px; /* Adjust the max-width as needed */
             display: block;
             margin: 0 auto; /* Center the image within its container */
         }
-
+       .tools img{
+       width:1000px;
+       }
         .about-me {
-            max-width: 600px;
+            max-width: 1300px;
             margin: 0 auto;
+        }
+        .home {
+
+            max-width: 400px;
+            margin-top: 50px;
+            margin: 0 auto;
+
         }
 
         .projects {
@@ -114,16 +141,43 @@
         .project-report {
     text-align: left;
 }
+    .contact-links a {
+    font-size: 24px;
+    display: inline-block;
+    color: #00008B;
+    line-height: 1;
+    transition: 0.3s;
+    }
+    .contact-links p{
+   margin-right:40px;
+    }
+    .download-button {
+          display: inline-block;
+          padding: 12px 24px;
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+          text-decoration: none;
+          background-color: #1d66a6;
+          color: #ffffff;
+          border-radius: 4px;
+          border: none;
+          transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+          background-color: #ffffff;
+        }
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: white;
+            color: black;
             text-align: center;
             padding: 20px 0;
         }
 
         footer p {
             margin: 0;
-        }
+        }   
     </style>
 </head>
 <body>
@@ -134,34 +188,43 @@
 
         </div>
         <div class="ms-auto">
-			<a href="#about">ABOUT ME</a>
+			<a href="#about-me">ABOUT ME</a>
             <a href="#projects">PROJECTS</a>
             <a href="#contact">CONTACT</a>
         </div>
 
         <!-- Add any additional content you want on the right side -->
 </nav>
-<header>
-    <h1>MEENU MOHAN</h1>
-    <h3>Python Developer/Data Analyst</h3>
-</header>
-
-<div class="about-container">
+<div class="home-container">
      <div class="profile-image">
            <img src="media/profile.jpg" alt="Profile image">
      </div>
 
-    <div class="about-me">
-        <h2>About Me</h2>
-         <p>Hello there! I'm Meenu Mohan, a passionate and results-driven Python Full Stack Developer. With a foundation in web development and a love for problem-solving, I bring a unique blend of technical proficiency and creative thinking to every project.</p>
-            <p>I hold a Master's degree in Signal Processing (MTech) and a Bachelor's degree in Electronics and Communication (BTech) from Cochin University of Science and Technology (CUSAT). My academic journey laid the groundwork for my analytical mindset and attention to detail, qualities that I consistently bring to my work.My professional journey has been dynamic, starting with roles such as VBA Developer and Office Administrator in the UAE before transitioning to becoming a Full Stack Developer. As an intern at Inmakes Infotech Pvt Ltd in Kerala, India, I designed, built, and maintained websites, collaborating with cross-functional teams to deliver seamless user experiences.</p>
-            <p>My technical toolkit includes proficiency in various programming languages such as Python, C#, C++, Matlab,and Java. I specialize in both front-end (JavaScript, React, Angular, HTML, CSS) and back-end (Django, Flask, Node.js) development, ensuring a comprehensive understanding of the entire development stack.</p>
-            <p>Outside the realm of coding, I enjoy solving puzzles, with Sudoku being one of my favorites. I find joy in reading books, including "The Alchemist," "The Monk Who Sold His Ferrari," and "The Secret," which inspire me to think beyond conventional boundaries.</p>
-
-            <p>I am thrilled about the prospect of contributing my skills to innovative projects and embracing new challenges.I am actively seeking opportunities to further my career in the ever-evolving world of technology.</p>
-            <p>Feel free to reach out at <b>meenus0708@gmail.com</b> or connect with me on <a href="https://www.linkedin.com/in/meenu-mohan-478a72182/">LinkedIn</a>.</p>
+    <div class="home">
+        <h1 style="margin-top: 50%;">MEENU MOHAN</h1>
+        <h3>ML Engineer / Python Full Stack Developer</h3>
+        <div class="social">
+            <a href="https://github.com/meenu0708" ><i class="fa-brands fa-github"></i></a>
+            <a href=https://www.linkedin.com/in/meenu-mohan-478a72182/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </div>
 </div>
+<section id="about-me" class="about-me">
+    <h2>ABOUT</h2>
+    <hr>
+         <p class = "me" style="width:70%; margin-left: 15%; margin-top: 2%; text-align: justify;">Experienced Python Developer and Trainer at Zion Institute,Kochi and a passionate AI/ML Engineer. With a strong foundation in web development, artificial intelligence, and machine learning, I bring a unique blend of technical proficiency, analytical thinking, and creative problem-solving to every project.</p>
+         <p class = "me" style="width:70%; margin-left: 15%; margin-top: 2%; text-align: justify;">I hold a Master's degree in Signal Processing (MTech) and a Bachelor's degree in Electronics and Communication (BTech) from Cochin University of Science and Technology (CUSAT). My academic journey has equipped me with an analytical mindset and keen attention to detail, qualities that I consistently apply to my work.</p>
+
+         <p class = "me" style="width:70%; margin-left: 15%; margin-top: 2%; text-align: justify;">My professional journey has been dynamic, beginning with roles such as VBA Developer and Office Administrator in the UAE before transitioning to a Full Stack Developer role. During my internship at Inmakes Infotech Pvt Ltd in Kerala, India, I designed, built, and maintained websites, collaborating with cross-functional teams to deliver seamless user experiences. My technical toolkit includes proficiency in programming languages such as Python, C#, C++, Matlab, and Java. I specialize in both front-end (JavaScript, HTML, CSS) and back-end (Django, Flask) development, ensuring a comprehensive understanding of the entire development stack.In addition to web development, I have studied Artificial Intelligence and Machine Learning extensively, building several models and applications in these fields. I am actively seeking roles as an AI/ML Engineer to leverage my expertise in developing intelligent systems and innovative solutions.</p>
+         <p class = "me" style="width:70%; margin-left: 15%; margin-top: 2%; text-align: justify;">Outside the realm of coding, I enjoy solving puzzles, with Sudoku being one of my favorites. I find joy in reading books, including "The Alchemist," "The Monk Who Sold His Ferrari," and "The Secret," which inspire me to think beyond conventional boundaries.</p>
+         <p class = "me" style="width:70%; margin-left: 15%; margin-top: 2%; text-align: justify;">I am excited about the prospect of contributing my skills to innovative projects and embracing new challenges. I am actively seeking opportunities to further my career in the ever-evolving world of technology.</p>
+
+         <p class = "me" style="width:70%; margin-left: 15%; margin-top: 2%; text-align: justify;">Feel free to reach out at <b>meenus0708@gmail.com</b> or connect with me on <a href="https://www.linkedin.com/in/meenu-mohan-478a72182/">LinkedIn</a>.</p>
+</section>
+<section id="tools" class="tools">
+    <h2>TOOLS I WORK WITH</h2>
+    <img src="media/tools.png" alt="Tools">
+</section>
 
 <section id="projects">
     <div class="container">
@@ -172,24 +235,34 @@
                 <img src="media/project1.png" alt="Project 1 Image" class="project-image">
                 <h3><a href="#CIS" style="text-decoration: none; color: black;">Criminal Identification System</a></h3>
                 <p><b>Technologies:</b>Python, Django,Machine learning, Image processing, Javascript, HTML, CSS</p>
-
+		<a href="" style="text-decoration: none;"><i class="fa-solid fa-rocket"></i> Learn More</a>
             </div>
             <div class="project">
                 <img src="media/project2.png" alt="Project 1 Image" class="project-image">
                 <h3><a href="#DPD" style="text-decoration: none; color: black;">Deep Fake Detection in Videos</a> </h3>
                 <p><b>Technologies:</b>Python,TensorFlow,LSTM, Image Processing, Tkinter,Jupyter Notebook</p>
+		<a href="https://github.com/meenu0708/DeepFakeDetection" style="text-decoration: none;"><i class="fa-solid fa-rocket"></i> Learn More</a>
+            </div>
+	    <div class="project">
+                <img src="media/house.jpg" alt="Project 1 Image" class="project-image">
+                <h3><a href="#HPP" style="text-decoration: none; color: black;">House Price Prediction</a> </h3>
+                <p><b>Technologies:</b>Python,Flask,Matplotlib, Regression model,Jupyter Notebook</p>
+                <a href="https://github.com/meenu0708/Housepriceprediction/tree/main/HousePricePrediction" style="text-decoration: none;"><i class="fa-solid fa-rocket"></i> Learn More</a>
 
             </div>
             <div class="project">
                 <img src="media/project3.jpg" alt="Project 1 Image" class="project-image">
                 <h3><a href="#HSR" style="text-decoration: none; color: black;">Hair Style Recommendation System</a></h3>
                 <p><b>Technologies:</b>Python, Django, OpenCV, Dlib, Machine Learning, HTML, CSS</p>
+		<a href="https://github.com/meenu0708/HairStyleRecommendation" style="text-decoration: none;"><i class="fa-solid fa-rocket"></i> Learn More</a>
 
             </div>
             <div class="project">
                 <img src="media/pro4.png" alt="Project 4 Image" class="project-image">
                 <h3><a href="#HQA" style="text-decoration: none; color: black;">Haystack question and answer generating project</a></h3>
                 <p><b>Technologies:</b>Python, Django, Haystack, HTML, CSS</p>
+		<a href="https://github.com/meenu0708/Haystack_Project/tree/main/Haystackproject" style="text-decoration: none;"><i class="fa-solid fa-rocket"></i> Learn More</a>
+		
 
             </div>
             <div class="project">
@@ -201,6 +274,7 @@
                 <img src="media/pro6.jpg" alt="Project 6 Image" class="project-image">
                 <h3><a href="#ECW" style="text-decoration: none; color: black;">E-Commerce Website</a></h3>
                 <p><b>Technologies:</b>Python, Django ,HTML, CSS, Bootstrap</p>
+		<a href="https://github.com/meenu0708/Eshopping/tree/main/ecommerceproject" style="text-decoration: none;"><i class="fa-solid fa-rocket"></i> Learn More</a>
             </div>
             <!-- Add more projects as needed -->
         </div>
@@ -224,14 +298,14 @@ By combining intuitive sketching tools with advanced recognition capabilities, t
 offers a user-friendly interface for creating accurate sketches and aiding in criminal identification
 processes.</p>
 
-      <p>Read More>>  <a href="media/CIS_Report.pdf" target="_blank">Full Report</a>>><a href="https://github.com/meenu0708/Haystack_Project/tree/main/Haystackproject" target="_blank">Project Code</a></p>
+      <p>Read More>>  <a href="media/CIS_Report.pdf" target="_blank">Full Report</a></p>
     </div>
     <div id="DFD" class="project-report">
         <h3>Depp Fake Detection in Videos</h3>
         <p>The "Deep Fake Detection in Videos" project aims to develop a robust system for identifying deepfake videos using a combination of convolutional neural networks (CNNs) and recurrent neural networks (RNNs). The project involves preprocessing video data, training a deep learning model, and deploying a user-friendly interface using Tkinter for video upload and real-time analysis. The system classifies videos as real or fake by analyzing extracted frames and leveraging a trained deepfake detection model. This project provides a comprehensive solution for detecting manipulated video content, contributing to the fight against misinformation and enhancing digital media integrity.</p>
         <p>The dataset for this project comprises two categories of videos: Real Videos: Authentic videos without any manipulations and
         Fake Videos: Videos altered using deepfake techniques. The videos were preprocessed and divided into frames, which were then used for training the deep learning model.</p>
-      <p>Read More>>  <a href="media/DeepFake_Report.pdf" target="_blank">Full Report</a>>><a href="https://github.com/meenu0708/DeepFakeDetection" target="_blank">Project Code</a></p>
+      <p>Read More>>  <a href="media/DeepFake_Report.pdf" target="_blank">Full Report</a></p>
     </div>
     <div id="HSR" class="project-report">
         <h3>Hair Style Recommendation System</h3>
@@ -258,7 +332,7 @@ the impact of the decision makes it hard to choose, also
 the large amount of options causes difficulty. There are
 so many different hairstyles that it can seem like an
 impossible decision to make</p>
-      <p><a href="https://github.com/meenu0708/HairStyleRecommendation" target="_blank">Project Code</a></p>
+     
     </div>
     <div id="HQA" class="project-report">
         <h3>Haystack question and answer generating project</h3>
@@ -276,23 +350,37 @@ a user-friendly web interface allowing users to log in and access personalized f
 ingestion and indexing of various document formats, applying advanced NLP models. The system will employ
 semantic search techniques to comprehend context and semantics, offering query expansion suggestions and
 relevance ranking for improved search results.Here the Libraries used are StreamLit and Haystack.</p>
-      <p>Read More>>  <a href="media/Report_1.pdf" target="_blank">Full Report</a>>><a href="https://github.com/meenu0708/Haystack_Project/tree/main/Haystackproject" target="_blank">Project Code</a></p>
+      <p>Read More>>  <a href="media/Report_1.pdf" target="_blank">Full Report</a></p>
     </div>
     <div id="ECW" class="project-report">
         <h3>E-commerce Website Development</h3>
         <p>The project involved the development of an ecommerce website using Python, Django, HTML, CSS, and Bootstrap. The goal was to create a user-friendly platform that allows customers to browse products, add them to a shopping cart, and complete purchases securely. The project utilized Django's robust framework for building web applications, along with HTML, CSS, and Bootstrap for frontend design and styling.</p>
         <p>Overall, the ecommerce website project aimed to provide a seamless shopping experience for users while showcasing proficiency in web development technologies and frameworks.</p>
-         <p>Read More>>  <a href="media/Report_2.pdf" target="_blank">Full Report</a>>><a href="https://github.com/meenu0708/Eshopping/tree/main/ecommerceproject" target="_blank">Project Code</a></p>
+         <p>Read More>>  <a href="media/Report_2.pdf" target="_blank">Full Report</a></p>
     </div>
     <!-- Add more project reports as needed -->
 </section>
 <section id="contact" class="container">
-    <h2>Contact Me</h2>
-    <p><b>Email: </b>meenus0708@gmail.com</p>
-    <p><b>Phone: </b>+918111927151</p>
-    <p><b>RESUME: </b><a href="media/MEENU MOHAN Python Full Stack Developer.pdf">Meenu Mohan Python Developer</a></p>
-    <!-- Add additional contact information or a contact form if desired -->
+    <h2>CONTACT</h2>
+    <hr>
+    <div class="contact-links" style="margin-right:0">
+        <p><a><i class="fa-solid fa-envelope"></i></a><b> Email: </b>meenus0708@gmail.com
+            <a><i class="fa-solid fa-mobile"></i></a><b> Phone: </b>+918111927151</p>
+        <p>  <a href="https://github.com/meenu0708" ><i class="fa-brands fa-github"></i></a> Github
+            <a href=https://www.linkedin.com/in/meenu-mohan-478a72182/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a> LinkedIn</p>
+
+    </div>
 </section>
+<section id="resume" class="resume">
+    <h3>Download my Resume here</h3>
+     <a href="media/Resume.pdf" download class="download-button">Resume <i class="fa-solid fa-download"></i></a>
+</section>
+<footer id="footer">
+    <div class="container" >
+      <h2>Meenu Mohan</h2>
+      <p>ML Engineeer / Python Developer</p>
+    </div>
+</footer>
 
 
 
